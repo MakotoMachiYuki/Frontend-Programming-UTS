@@ -4,6 +4,12 @@ body {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: flex;
     padding: 20px;
@@ -15,25 +21,83 @@ body {
     flex-direction: column;
     align-items: center;
     padding-left: 40px;
+    position: relative;
 }
 
-.main-image img{
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 20px;
+.image-box {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img{
+    transition: transform 0.3s ease;
+}
+
+.zoomed {
+    transform: scale(2);
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.swipe-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.126);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
     cursor: pointer;
+    z-index: 10;
+    border-radius: 10px;
 }
 
-.thumbnail-images{
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right:10px;
+    left: auto;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease;
+}
+
+.thumbnail:hover{
+    transform: scale(1.10);
+}
+
+.thumbnail.active {
+    border: 2px solid rgb(98, 0, 255);
+}
+
+.thumbnail-images {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    width: 100%;
-    max-width: 350px;
+    margin-top: 20px;
 }
 
 .thumbnail-images img{
-    width: 200px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     border: 1px solid #ccc;
 }
@@ -52,7 +116,11 @@ body {
 }
 
 .product-details h1{
-    margin-top: 30px
+    margin-top: 40px
+}
+
+.product-details h2 {
+    margin-top: 10px
 }
 
 .colors {
@@ -68,54 +136,148 @@ body {
     cursor: pointer;
 }
 
-.description{
+.link{
     margin-top: 20px;
 }
 
-.description h2{
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.description p{
+.link h1{
     margin: 10px 0;
-    text-align: justify;
 }
 
-.description hr{
-    border: none;
-    border-top: 2px solid #ccc;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal-content {
-    margin: auto;
+.box-link {
     display: block;
-    width: 80%;
-    max-width: 700px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: fit-content;
 }
 
-.close{
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: white;
+.tokopedia{
+    background-color: #018631;
+    font-size: 20px;
+}
+
+.shopee{
+    background-color: #ff4f2c;
+    font-size: 20px;
+}
+
+.box-link:hover{
+    opacity: 0.9;
+}
+
+.about-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 40px;
     font-weight: bold;
-    cursor: pointer;
+    text-align: center;
 }
 
-.link{
-    padding: 90px;
+.about-this-item-container-right {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: black;
+}
+
+.about-this-item-image { 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-this-item-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.about-this-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-this-item p {
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-right: 50px;
+    color: white;
+}
+
+.about-this-item-container-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.about-this-item-container-left .about-this-item-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-this-item-container-left .about-this-item-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.about-this-item-container-left .about-this-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-this-item-container-left .about-this-item p {
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-left: 50px;
+    color: black;
+}
+
+.cust-reviews-container{
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.cust-reviews h1{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+
+.review{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.1);
+    text-align: center;
+}
+
+.review h3{
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review p{
+    color: #777;
+    font-size: 16px;
+}
+
+.rating i {
+    flex-shrink: 0;
 }

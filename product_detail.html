@@ -4,68 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylepdetail.css" />
+    <script src="scriptpdetail.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Product-detail</title>
 </head>
 <body>
     <div class="container">
         <div class="product-images">
-            <div class="main-image">
-                <img src="images/apple1.jpg" class="main-img" alt="apple1">
+            <div class="image-box">
+                <img id="mainImage" src="images/airpodspro1.png" class="product-img" alt="airpodspro1">
+            <button id="prevBtn" class="swipe-btn left-btn">&lt;</button>
+            <button id="nextBtn" class="swipe-btn right-btn">&gt;</button>
             </div>
+            
             <div class="thumbnail-images">
-                <img src="images/apple2.jpg" class="product-img" alt="apple2">
-                <img src="images/apple3.jpg" class="product-img" alt="apple3">
+                <img src="images/airpodspro1.png" class="product-img thumbnail" alt="airpodspro2" data-index="0">
+                <img src="images/airpodspro2.png" class="product-img thumbnail" alt="airpodspro2" data-index="1">
+                <img src="images/airpodspro3.png" class="product-img thumbnail" alt="airpodspro3" data-index="2">
+                <img src="images/airpodspro4.png" class="product-img thumbnail" alt="airpodspro4" data-index="3">
+                <img src="images/airpodspro5.png" class="product-img thumbnail" alt="airpodspro5" data-index="4">
+                <img src="images/airpodspro6.png" class="product-img thumbnail" alt="airpodspro6" data-index="5"> 
             </div>
         </div>
         <div class="product-details">
-            <h1>iPhone 13 Silicone Case with MagSafe</h1>
-            <p>SKU: 8100029778</p>
-            <p class="price">Rp 1.099.000 </p>
+            <h1>AirPods Pro (2nd gen)</h1>
+            <h2>Apple</h2>
+            <p class="price">Rp 3.599.000 - Rp 4.299.000 </p>
             <div class="colors">
-                <div class="color" style="background-color: black;"></div>
-                <div class="color" style="background-color: navy;"></div>
-                <div class="color" style="background-color: grey;"></div>
-                <div class="color" style="background-color: pink;"></div>
-                <div class="color" style="background-color: darkgreen;"></div>
-                <div class="color" style="background-color: green;"></div>
-                <div class="color" style="background-color: yellow;"></div>
-                <div class="color" style="background-color: orange;"></div>
+                <div class="color" style="background-color: white;"></div>
             </div>
 
-            <div class="description">
-                <hr>
-                <h2>Deskripsi</h2>
-                <p>Dirancang oleh Apple untuk membalut iPhone 13, Casing Silikon dengan MagSafe adalah cara yang menyenangkan untuk
-                melindungi iPhone Anda.
-                
-                Eksterior silikon dengan sentuhan akhir yang halus dan lembut terasa nyaman di tangan Anda. Dan di bagian dalamnya, ada
-                lapisan mikroserat lembut untuk perlindungan yang lebih baik.
-                
-                Dengan magnet bawaan yang berjajar pas dengan iPhone 13, casing ini menghadirkan pengalaman pemasangan yang begitu
-                mengagumkan serta pengisian daya nirkabel lebih cepat, setiap saat. Jika tiba saatnya untuk mengisi daya, biarkan casing
-                terpasang pada iPhone Anda, lalu tempelkan pengisi daya MagSafe Anda, atau letakkan saja di atas pengisi daya
-                bersertifikat Qi.
-                
-                Seperti halnya setiap casing yang dirancang Apple, casing ini telah melalui ribuan jam pengujian di seluruh desain dan
-                proses manufaktur. Jadi, tidak hanya terlihat indah, casing ini dibuat untuk melindungi iPhone dari goresan dan
-                benturan.</p>
-                <hr>
+            <div class="link">
+                <h1>Link</h1>
+                <a href="https://www.tokopedia.com/teknotrend/ibox-apple-airpods-pro-2-2022-airpod-2nd-generation-original-not-gen-3-apple-magsafe-typec-60dbb"class="box-link tokopedia">Find at Tokopedia</a>
+                <a href="https://shopee.co.id/APPLE-AIRPODS-PRO-GEN-2-WITH-USB-C-i.1235323511.24386098486?sp_atk=e0d7747d-f9c4-43ae-8996-ed25b7fb982f&xptdk=e0d7747d-f9c4-43ae-8996-ed25b7fb982f" class="box-link shopee">Find at shopee</a>
+            </div>
             </div>
         </div>
-    </div>
-
-        <div class="link">
-            <hr>
-            <h2>Link</h2>
-            <nav>
-                <ul>
-                    <li><a href="https://ibox.co.id/product/iphone-13-pro-silicone-case-with-magsafe-s8100029801">Ibox</a></li>
-                </ul>
-            </nav>
-            <hr>
+        
+        <h1 class="about-title">About This Item</h1>
+        <div class="about-this-item-container-right">
+            <div class="about-this-item-image">
+                <img src="images/chiph2.png" alt="Chip H2">
+            </div>
+            <div class="about-this-item">
+                <p>Chip H2 menjalankan lebih banyak fungsi dari sebelumnya, menggunakan algoritme komputasi untuk menghadirkan
+                    peredam kebisingan yang lebih cerdas, suara tiga dimensi yang superior, dan kekuatan baterai yang lebih efisien —
+                    semuanya hadir bersamaan.</p>
+            </div>
         </div>
 
+        <div class="about-this-item-container-left">
+            <div class="about-this-item">
+                <p>Mikrofon peredam kebisingan dan ventilasi belakang ditempatkan secara optimal untuk mendeteksi suara yang masuk dengan
+                cepat, bekerja sama untuk menghalau kebisingan sebelum mencapai telinga Anda.</p>
+            </div>
+            <div class="about-this-item-image">
+                <img src="images/peredam.png" alt="Chip H2">
+            </div>
+        </div>
+
+        <div class="about-this-item-container-right">
+            <div class="about-this-item-image">
+                <img src="images/airpodsleft.png" alt="Chip H2">
+            </div>
+            <div class="about-this-item">
+                <p>Driver dan algoritme akustik membantu Peredam Kebisingan Aktif mengurangi lebih banyak suara yang tidak diinginkan.
+                Dengan kendali atas apa yang ingin Anda dengar — dan apa yang tidak ingin didengar — Anda dapat terhanyut dalam musik
+                dan podcast, atau tetap fokus, dengan cara yang baru.</p>
+            </div>
+        </div>
+        
+        <div class="about-this-item-container-left">
+            <div class="about-this-item">
+                <p>Empat pasang ujung silikon disertakan agar sesuai dengan lebih banyak ukuran telinga. Ujung ini mengamankan AirPods Pro
+                di tempatnya dan menciptakan segel akustik yang dapat mengunci suara.</p>
+            </div>
+            <div class="about-this-item-image">
+                <img src="images/silikon.png" alt="Chip H2">
+            </div>
+        </div>
+
+        <div class="about-this-item-container-right">
+            <div class="about-this-item-image">
+                <img src="images/cas.png" alt="Chip H2">
+            </div>
+            <div class="about-this-item">
+                <p>Isi daya Casing Pengisian Daya MagSafe5 dengan konektor USB-C, pengisi daya Apple Watch, atau MagSafe. Anda juga dapat
+                menggunakan pengisi daya bersertifikat Qi.</p>
+            </div>
+        </div>
+        
+
+        <div class="cust-reviews">
+        <h1>Reviews</h1>
+            <div class="cust-reviews-container">
+                <div class="review">
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>                        
+                    </div>
+                    <h3>Susanti</h3>
+                    <p>Kualitasnya bagus!</p>
+                </div>
+                <div class="review">
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+                    <h3>Alex</h3>
+                    <p>Fungsinya Mantap!!!!</p>
+                </div>
+                <div class="review">
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+                    <h3>Budi</h3>
+                    <p>Bagus!</p>
+                </div>
+                <div class="review">
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+                    <h3>Susi</h3>
+                    <p>Barangnya Okee!!!</p>
+                </div>
+                <div class="review">
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+                    <h3>Kevin</h3>
+                    <p>Cakep Bangettt!!!!!</p>
+                </div>
+        </div>
     </div>
-    
+    </div>
 </body>
 </html>
