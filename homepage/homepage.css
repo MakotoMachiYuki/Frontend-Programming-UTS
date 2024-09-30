@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  outline: #85cbf8 solid 2px;
+}
+
+#main {
+  position: relative;
+  background-color: aliceblue;
+  max-width: 1950px;
+
+  margin: auto;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  overflow: hidden;
+  color: white;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
