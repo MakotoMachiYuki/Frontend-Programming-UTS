@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -25,8 +25,8 @@ body {
 }
 
 .image-box {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border: 1px solid #ccc;
     display: flex;
     align-items: center;
@@ -47,6 +47,8 @@ body {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .swipe-btn{
@@ -96,8 +98,9 @@ body {
 }
 
 .thumbnail-images img{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
     cursor: pointer;
     border: 1px solid #ccc;
 }
@@ -105,7 +108,7 @@ body {
 .product-details{
     flex: 1;
     padding-left: 50px;
-    padding-right: 80px;
+    /* padding-right: 80px; */
 }
 
 .product-details .price{
@@ -129,11 +132,23 @@ body {
 }
 
 .color {
-    width: 25px;
-    height: 25px;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.color:hover {
+    transform: scale(1.1);
+    border-color: #000;
+}
+
+.color:focus {
+    outline: none;
+    border-color: #000;
 }
 
 .link{
@@ -181,7 +196,7 @@ body {
 .about-this-item-container-right {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
     gap: 20px;
     background-color: black;
 }
@@ -194,28 +209,37 @@ body {
 
 .about-this-item-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .about-this-item {
     flex: 1;
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
 .about-this-item p {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     text-align: justify;
     padding-right: 50px;
     color: white;
 }
 
+.about-this-item h1 {
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-right: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
 .about-this-item-container-left {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
     gap: 20px;
 }
 
@@ -232,12 +256,20 @@ body {
 
 .about-this-item-container-left .about-this-item {
     flex: 1;
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
-.about-this-item-container-left .about-this-item p {
+.about-this-item-container-left .about-this-item h1 {
     font-size: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-left: 50px;
+    color: black;
+}
+
+.about-this-item-container-left .about-this-item p {
+    font-size: 25px;
     line-height: 1.5;
     text-align: justify;
     padding-left: 50px;
@@ -280,4 +312,10 @@ body {
 
 .rating i {
     flex-shrink: 0;
+}
+
+.zoomed {
+    transform: scale(2);
+    transition: transform 0.3 ease-in-out;
+    cursor: zoom-out;
 }
