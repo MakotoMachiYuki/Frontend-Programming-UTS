@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  outline: #85cbf8 solid 2px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s;
+}
+
+ul li a:hover {
+  color: #85cbf8;
+}
+
+h3 {
+  color: #85cbf8;
+}
+
+.footerSection {
+  flex: 1;
+  justify-content: center;
+  min-width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+.about {
+  text-align: justify;
+}
+
+.support,
+.explore {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.footerSection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.footerSection p,
+ul,
+form {
+  margin-bottom: 10px;
+}
+
+.logos img {
+  max-width: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footerSection form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerSection form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footerSection form button {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.footerSection form button:hover {
+  background-color: black;
+  outline: #85cbf8 solid 2px;
+  color: #85cbf8;
+}
+
+#footerBottom {
+  display: flex;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+}
+
+#footerBottom p {
+  margin: 0;
+}
