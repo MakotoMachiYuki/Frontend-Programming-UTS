@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(function () {
-    $("#header").load("../html/header.html", function () {
+    $("#header").load("../../html/header.html", function () {
       const searchGlassLogo = document.getElementById("mainSearchGlassLogo");
       const searchHeader = document.getElementById("searchHeader");
       const menuToggle = document.getElementById("menuToggle");
@@ -49,7 +49,7 @@ $(document).ready(function () {
         }
       });
     });
-  }, $("#footer").load("../html/footer.html"));
+  }, $("#footer").load("../../html/footer.html"));
 });
 
 function clickSearchIcon(searchIcon) {
