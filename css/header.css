@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #85cbf8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+header {
+  display: flex;
+  width: 100vw;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #85cbf8;
+  outline: #85cbf8 solid 2px;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#rightHeader {
+  display: flex;
+  justify-content: start;
+  justify-self: start;
+}
+
+#iconHeader a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-size: 1rem;
+  text-align: center;
+  padding-right: 20px;
+  color: #85cbf8;
+  outline: none;
+}
+
+#iconHeader a:hover {
+  color: white;
+}
+
+#chaldeaLogo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+#selectionHeader1 {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+#selectionHeader1 li {
+  position: relative;
+}
+
+#selectionHeader1 li:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.overlayMenu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 500px;
+  background-color: whitesmoke;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  z-index: 1000;
+  padding: 10px;
+  outline: 2px solid #85cbf8;
+  transition: background-color 0.3s;
+}
+
+.selectionItem::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 10px;
+  z-index: 1000;
+}
+
+.selectionItem:hover .overlayMenu {
+  display: flex;
+  background-color: black;
+  color: #85cbf8;
+  outline: #85cbf8 solid 2px;
+  align-items: center;
+}
+
+.selectionItem:hover::after {
+  display: none;
+}
+
+#selectionHeader2 {
+  display: flex;
+  justify-content: end;
+  justify-self: end;
+  gap: 20px;
+}
+
+#selectionHeader2 i:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#searchHeader {
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  outline: #85cbf8 solid 2px;
+}
+
+#searchDiv {
+  display: flex;
+  position: relative;
+  height: auto;
+  padding-left: 0;
+  align-items: center;
+  transition: opacity 0.1s ease-in-out;
+  font-size: 1.75rem;
+}
+
+#searchInput {
+  padding-left: 10px;
+  outline: none;
+  border-color: transparent;
+  color: white;
+  height: auto;
+  width: 90vw;
+  font-size: 1.75rem;
+  background-color: transparent;
+}
+
+#productContainer {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  margin-top: 19.5px;
+  width: 100vw;
+  padding: 20px;
+  position: relative;
+  background-color: black;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  border: 1px solid #85cbf8;
+  width: 200px;
+}
+
+.product img {
+  width: 20%;
+  height: auto;
+}
+
+.product-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#noResult {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #85cbf8;
+}
+
+#menuToggleDiv {
+  display: none;
+}
+
+#menuToogle {
+  display: none;
+}
+
+#sidebarMenu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 10000;
+  padding: 20px;
+  padding-top: 10px;
+  color: white;
+  outline: #85cbf8 solid 2px;
+}
+
+#closeSidebar {
+  font-size: 3rem;
+  cursor: pointer;
+  text-align: left;
+  border-bottom: #85cbf8 solid 2px;
+}
+
+#sidebarMenu ul {
+  padding: 20px 0;
+}
+
+.menuItem {
+  display: flex;
+  width: 50vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.caretText {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+  border-bottom: #85cbf8 1px solid;
+}
+
+#sidebarMenu li {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#sidebarMenu li:hover {
+  color: #85cbf8;
+}
+
+.fa-caret-up {
+  display: none;
+}
+
+.dropDownContent {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #menuToggleDiv {
+    display: flex;
+  }
+
+  #selectionHeader1 {
+    display: none;
+  }
+
+  #selectionHeader2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  #sidebarMenuIcon {
+    display: block;
+  }
+
+  #iconHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
