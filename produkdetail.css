@@ -321,6 +321,7 @@ body {
 .review p{
     color: #777;
     font-size: 16px;
+    text-align: justify;
 }
 
 .rating i {
@@ -331,4 +332,81 @@ body {
     transform: scale(2);
     transition: transform 0.3 ease-in-out;
     cursor: zoom-out;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .image-box {
+        width: 70%;
+        height: auto;
+    }
+
+    .thumbnail-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: auto;
+    }
+
+    .thumbnail-images img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .about-this-item-container-left, .about-this-item-container-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .image-box {
+        width: 70%;
+        height: auto;
+    }
+
+    .thumbnail-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: auto;
+    }
+
+    .thumbnail-images img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .about-this-item-container-left,
+    .about-this-item-container-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-this-item h1{
+        font-size: 20px;
+    }
+
+    .about-this-item p, .about-this-item li {
+        font-size: 16px;
+    }
 }

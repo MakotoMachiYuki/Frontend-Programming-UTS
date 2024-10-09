@@ -132,6 +132,22 @@ document.addEventListener('DOMContentLoaded', () => {
     'images/produk/nothingwatchorange4.png'
     ];
 
+    const greenImages8 = [
+    'images/produk/galaxywatch1.png',
+    'images/produk/galaxywatch2.png',
+    'images/produk/galaxywatch3.png',
+    'images/produk/galaxywatch4.png',
+    'images/produk/galaxywatch5.png'
+    ];
+
+    const silverImages8 = [
+    'images/produk/galaxywatchsilver1.png',
+    'images/produk/galaxywatchsilver2.png',
+    'images/produk/galaxywatchsilver3.png',
+    'images/produk/galaxywatchsilver4.png',
+    'images/produk/galaxywatchsilver5.png'
+    ];
+
     const blackImages9 = [
     'images/produk/alpakabag1.png',
     'images/produk/alpakabag2.png',
@@ -270,6 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initProductSlider(5, midnightImages5);
     initProductSlider(6, greenImages6);
     initProductSlider(7, darkgreyImages7);
+    initProductSlider(8, greenImages8);
     initProductSlider(9, blackImages9);
     initProductSlider(10, blackImages10);
     initProductSlider(11, blackImages11);
@@ -325,6 +342,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 initProductSlider(7, blueImages7);
             }else if (selectedColor === 'orange') {
                 initProductSlider(7, orangeImages7);
+            }
+
+            if (selectedColor === 'green') {
+                initProductSlider(8, greenImages8);
+            }else if (selectedColor === 'silver') {
+                initProductSlider(8, silverImages8);
             }
 
             if (selectedColor === 'black') {
