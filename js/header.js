@@ -91,11 +91,13 @@ function search(input) {
     $("#noResult").hide();
     foundProducts.forEach((product) => {
       productContainer.innerHTML += `
-        <div class="product">
+      <div class="product">
+      <a href="${product.page}">
           <img src="${product.img}" alt="${product.name}" />
           <div class="product-info">
             <h3>${product.name}</h3>
           </div>
+          </a>
         </div>
       `;
     });
@@ -111,17 +113,72 @@ function search(input) {
 
 const products = [
   {
-    name: "Iphone 16",
-    img: "../images/search/iphone16.jpg",
+    name: "Air Pods Pro",
+    img: "../../images/produk/airpodspro1.png",
+    page: "../../html/product/airpodspro.html",
   },
   {
-    name: "Iphone 16 Plus",
-    img: "../images/search/iphone16plus.jpg",
+    name: "Space One",
+    img: "../../images/produk/spaceone1.png",
+    page: "../../html/product/soundcore.html",
+  },
+
+  {
+    name: "Nothing Gear",
+    img: "../../images/produk/nothingear1.png",
+    page: "../../html/product/nothinggear.html",
   },
   {
-    name: "Airpods 2",
-    img: "../images/airpodspro2.png",
+    name: "Apple Watch 1",
+    img: "../../images/produk/applewatch1.png",
+    page: "../../html/product/applewatch.html",
+  },
+
+  {
+    name: "Nothing Watch",
+    img: "../../images/produk/nothingwatchdarkgrey1.png",
+    page: "../../html/product/nothingwatch.html",
+  },
+
+  {
+    name: "Huawei Watch",
+    img: "../../images/produk/huaweiwatchblue1.png",
+    page: "../../html/product/huaweiwatch.html",
+  },
+
+  {
+    name: "Galaxy Watch 1",
+    img: "../../images/produk/galaxywatch1.png",
+    page: "../../html/product/galaxywatch.html",
+  },
+
+  {
+    name: "Alpaka Bag",
+    img: "../../images/produk/alpakabag1.png",
+    page: "../../html/product/alpakabag.html",
+  },
+
+  {
+    name: "Orbit Key Bag",
+    img: "../../images/produk/orbitkeybag1.png",
+    page: "../../html/product/orbitkeybag.html",
+  },
+
+  {
+    name: "Sony WF-1000XM4",
+    img: "../../images/produk/sonyblack1.png",
+    page: "../../html/product/sony.html",
+  },
+
+  {
+    name: "Able Bag",
+    img: "../../images/produk/ablebag1.png",
+    page: "../../html/product/ablebag.html",
+  },
+
+  {
+    name: "Aer bag",
+    img: "../../images/produk/aerbag1.png",
+    page: "../../html/product/aerbag.html",
   },
 ];
-
-function openFunction() {}
