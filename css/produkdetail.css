@@ -347,6 +347,14 @@ body {
         height: auto;
     }
 
+    .product-images{
+        padding-left: 0.5rem;
+    }
+
+    .product-details{
+        padding-left:2rem;
+    }
+
     .thumbnail-images {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -368,9 +376,78 @@ body {
         height: auto;
     }
 
-    .about-this-item-container-left, .about-this-item-container-right {
+    .about-this-item-container-left {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .about-this-item-container-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width:1200px) {
+        .cust-reviews-container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .image-box {
+        width: 70%;
+        height: auto;
+    }
+
+    .product-images {
+        padding-left: 0.5rem;
+    }
+
+    .product-details {
+        padding-left: 2rem;
+    }
+
+    .thumbnail-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: auto;
+    }
+
+    .thumbnail-images img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .about-this-item-image {
+        width: 70%;
+        height: auto;
+    }
+
+    .about-this-item-container-left {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-this-item-container-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cust-reviews-container{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -407,17 +484,30 @@ body {
         height: auto;
     }
 
-    .about-this-item-container-left,
-    .about-this-item-container-right {
+    .about-this-item-container-left .about-this-item h1{
         flex-direction: column;
         gap: 10px;
-    }
-
-    .about-this-item h1{
         font-size: 20px;
     }
 
-    .about-this-item p, .about-this-item li {
+    .about-this-item-container-left .about-this-item p, 
+    .about-this-item-container-left .about-this-item li {
         font-size: 16px;
+    }
+
+    .about-this-item-container-right .about-this-item h1{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .about-this-item-container-right .about-this-item p, 
+    .about-this-item-container-right .about-this-item li {
+        font-size: 16px;
+    }
+
+    .cust-reviews-container {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
