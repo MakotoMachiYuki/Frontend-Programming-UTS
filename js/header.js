@@ -165,19 +165,21 @@ const productsSearch = [
   },
 
   {
-    name: "Max Backpack",
+    name: "Sony WF-1000XM4",
     img: "../../images/produk/sonyblack1.png",
     page: "../../html/product/sony.html",
   },
 
   {
-    name: "Day Sling 3",
+
+    name: "Max Backpack",
+
     img: "../../images/produk/ablebag1.png",
     page: "../../html/product/ablebag.html",
   },
 
   {
-    name: "Aer bag",
+    name: "Day Sling 3",
     img: "../../images/produk/aerbag1.png",
     page: "../../html/product/aerbag.html",
   },
