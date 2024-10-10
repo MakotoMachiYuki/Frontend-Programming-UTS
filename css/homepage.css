@@ -24,7 +24,7 @@ a {
   position: relative;
   flex-direction: column;
   max-width: 100vw;
-  background-color: WHITE;
+  background-color: white;
   margin-bottom: 20px;
 }
 
@@ -88,76 +88,90 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 20px;
-  font: 1.5rem;
+  margin-top: 40px;
+  font: 2rem;
 }
 
 .tab {
-  margin: 0 15px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s ease;
 }
 .tab.active {
+  font-size: 2rem;
   border-bottom: 2px solid black;
 }
 
-#productsContainer {
+#productsContainerDiv {
   display: flex;
   position: relative;
   justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#productsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   gap: 30px;
   flex-wrap: wrap;
   margin: 30px;
 }
 
-.productCard {
+.products a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.products {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product {
+  border: 1px solid #000000;
+  padding: 1rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: white;
-  width: 200px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.productCard:hover {
-  transform: translateY(-5px);
-}
-
-.productCard img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-.productCard h3 {
-  color: black;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-#viewAll {
-  display: flex;
-  position: relative;
+  transition: box-shadow 0.3s ease;
   justify-content: center;
-  margin: 30px;
-}
-
-#viewAllButton {
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  background-color: black;
-  color: white;
-  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-#viewAllButton:hover {
-  outline: black solid 2px;
-  color: black;
+.product:hover {
   background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.product h3 {
+  color: black;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.product p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 900px) {
+  #productsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

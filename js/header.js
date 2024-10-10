@@ -69,32 +69,32 @@ function clickSearchIcon(searchIcon) {
 
     $("#searchHeader").slideUp();
 
-    $("#productContainer").hide();
+    $("#productContainerSearch").hide();
     $("#noResult").hide();
   }
 }
 
 function search(input) {
-  const productContainer = document.getElementById("productContainer");
+  const productContainer = document.getElementById("productContainerSearch");
   const noResult = document.getElementById("noResult");
   noResult.style.display = "";
 
   console.log(input);
 
   productContainer.innerHTML = "";
-  let foundProducts = products.filter((product) =>
+  let foundProducts = productsSearch.filter((product) =>
     product.name.toLowerCase().includes(input.toLowerCase())
   );
 
   if (foundProducts.length > 0) {
-    $("#productContainer").show().css({ display: "flex" });
+    $("#productContainerSearch").show().css({ display: "flex" });
     $("#noResult").hide();
     foundProducts.forEach((product) => {
       productContainer.innerHTML += `
-      <div class="product">
+      <div class="productSearch">
       <a href="${product.page}">
           <img src="${product.img}" alt="${product.name}" />
-          <div class="product-info">
+          <div class="productInfoSearch">
             <h3>${product.name}</h3>
           </div>
           </a>
@@ -106,12 +106,12 @@ function search(input) {
   }
 
   if (!input) {
-    $("#productContainer").hide();
+    $("#productContainerSearch").hide();
     $("#noResult").hide();
   }
 }
 
-const products = [
+const productsSearch = [
   {
     name: "Air Pods Pro",
     img: "../../images/produk/airpodspro1.png",
