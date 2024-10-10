@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio</title>
+    <link rel="stylesheet" href="../../css/category.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div>
+      <div class="comparator">
+        <div class="compro">
+          <select id="compro1" onchange="updateProduct(1)">
+            <option value="">Select a product</option>
+            <option value="compro1">Airpods Pro (2nd Generation)</option>
+            <option value="compro2">Sony WF-1000xM4</option>
+            <option value="compro3">Nothing Ear 2</option>
+            <option value="compro4">Soundcore Space One</option>
+          </select>
+          <div id="details1" class="compro-details">
+            <img id="image1" class="com-img" alt="Product 1" />
+            <h3 id="name1"></h3>
+            <div id="specs1" class="specs"></div>
+          </div>
+        </div>
+        <div class="compro">
+          <select id="compro2" onchange="updateProduct(2)">
+            <option value="">Select a product</option>
+            <option value="compro1">Airpods Pro (2nd Generation)</option>
+            <option value="compro2">Sony WF-1000xM4</option>
+            <option value="compro3">Nothing Ear 2</option>
+            <option value="compro4">Soundcore Space One</option>
+          </select>
+          <div id="details2" class="compro-details">
+            <img id="image2" class="com-img" alt="Product 2" />
+            <h3 id="name2"></h3>
+            <div id="specs2" class="specs"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header">
+        <h1>Audio</h1>
+      </div>
+
+      <div class="sort-container">
+        <select id="sortSelect" onchange="sortProducts()">
+          <option value="">Sort by</option>
+          <option value="nameAsc">Name A-Z</option>
+          <option value="nameDesc">Name Z-A</option>
+          <option value="priceLow">Price: Low to High</option>
+          <option value="priceHigh">Price: High to Low</option>
+        </select>
+      </div>
+
+      <div id="productContainer" class="products">
+        <a href="../product/airpodspro.html">
+          <div class="product">
+            <img
+              src="../../images/produk/airpodspro1.png"
+              alt="Airpods Pro (2nd Generation)"
+            />
+            <h3 class="productName">Airpods Pro (2nd Generation)</h3>
+            <p class="productPrice">IDR 3.399.000 - IDR 4.000.000</p>
+          </div>
+        </a>
+        <a href="../product/nothingear.html">
+          <div class="product">
+            <img
+              src="../../images/produk/nothingear1.png"
+              alt="Nothing Ear 2"
+            />
+            <h3 class="productName">Nothing Ear 2</h3>
+            <p class="productPrice">IDR 1.969.000 - IDR 2.400.000</p>
+          </div>
+        </a>
+        <a href="../product/sony.html">
+          <div class="product">
+            <img
+              src="../../images/produk/sonyblack1.png"
+              alt="Sony WF-1000xM4"
+            />
+            <h3 class="productName">Sony WF-1000xM4</h3>
+            <p class="productPrice">IDR 2.625.000 - IDR 2.900.000</p>
+          </div>
+        </a>
+        <a href="../product/soundcore.html">
+          <div class="product">
+            <img
+              src="../../images/produk/spaceone1.png"
+              alt="Soundcore Space One"
+            />
+            <h3 class="productName">Soundcore Space One</h3>
+            <p class="productPrice">IDR 1.129.000 - IDR 1.199.000</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/header.js"></script>
+  <script src="../../js/category.js"></script>
+</html>
