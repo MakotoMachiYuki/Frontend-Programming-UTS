@@ -171,7 +171,9 @@ const productsSearch = [
   },
 
   {
+
     name: "Max Backpack",
+
     img: "../../images/produk/ablebag1.png",
     page: "../../html/product/ablebag.html",
   },
