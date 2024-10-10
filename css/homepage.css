@@ -65,14 +65,16 @@ a {
   margin-left: auto;
   margin-right: auto;
   height: 400px;
+  object-fit: contain;
 }
 
 #slideDots {
-  position: absolute;
-  right: 5px;
-  top: 370px;
   display: flex;
-  justify-content: end;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 370px;
+  justify-content: center;
   text-align: right;
   padding: 5px;
   background: transparent;
@@ -179,5 +181,11 @@ a {
 @media (max-width: 900px) {
   #productsContainer {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .slides img {
+    object-fit: fill;
   }
 }
