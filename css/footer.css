@@ -6,12 +6,14 @@
 
 #footer {
   background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-  outline: #85cbf8 solid 2px;
+  top: 0;
+  z-index: 1000;
 }
 
 ul {
@@ -26,11 +28,11 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #85cbf8;
+  color: white;
 }
 
 h3 {
-  color: #85cbf8;
+  color: white;
 }
 
 .footerSection {
@@ -62,7 +64,7 @@ form {
 }
 
 .logos img {
-  max-width: 40px;
+  max-width: 60px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -91,8 +93,8 @@ form {
 
 .footerSection form button:hover {
   background-color: black;
-  outline: #85cbf8 solid 2px;
-  color: #85cbf8;
+  color: white;
+  outline: white solid 2px;
 }
 
 #footerBottom {

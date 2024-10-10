@@ -24,13 +24,13 @@ a {
   position: relative;
   flex-direction: column;
   max-width: 100vw;
-  height: 100vh;
-  background-color: black;
+  background-color: WHITE;
+  margin-bottom: 20px;
 }
 
 .slideshow-container {
   position: relative;
-  background-color: black;
+  background-color: white;
   max-width: 1000px;
   margin: auto;
 }
@@ -59,13 +59,12 @@ a {
   margin-right: auto;
   height: 400px;
   object-fit: fill;
-  border-radius: 5px;
 }
 
 #slideDots {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  position: absolute;
+  right: 5px;
+  top: 370px;
   display: flex;
   justify-content: end;
   text-align: right;
@@ -79,8 +78,86 @@ a {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: white;
   border-radius: 50%;
   display: flex;
   transition: background-color 0.6s ease;
+}
+
+#productTab {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font: 1.5rem;
+}
+
+.tab {
+  margin: 0 15px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+.tab.active {
+  border-bottom: 2px solid black;
+}
+
+#productsContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+}
+
+.productCard img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.productCard h3 {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#viewAll {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 30px;
+}
+
+#viewAllButton {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#viewAllButton:hover {
+  outline: black solid 2px;
+  color: black;
+  background-color: white;
 }
