@@ -113,7 +113,7 @@ function search(input) {
 
 const productsSearch = [
   {
-    name: "Air Pods Pro",
+    name: "Airpods Pro",
     img: "../../images/produk/airpodspro1.png",
     page: "../../html/product/airpodspro.html",
   },
@@ -124,24 +124,24 @@ const productsSearch = [
   },
 
   {
-    name: "Nothing Gear",
+    name: "Ear 2",
     img: "../../images/produk/nothingear1.png",
     page: "../../html/product/nothinggear.html",
   },
   {
-    name: "Apple Watch 1",
+    name: "Watch 9",
     img: "../../images/produk/applewatch1.png",
     page: "../../html/product/applewatch.html",
   },
 
   {
-    name: "Nothing Watch",
+    name: "CMF Watch Pro 2",
     img: "../../images/produk/nothingwatchdarkgrey1.png",
     page: "../../html/product/nothingwatch.html",
   },
 
   {
-    name: "Huawei Watch",
+    name: "Watch Ultimate",
     img: "../../images/produk/huaweiwatchblue1.png",
     page: "../../html/product/huaweiwatch.html",
   },
@@ -153,25 +153,25 @@ const productsSearch = [
   },
 
   {
-    name: "Alpaka Bag",
+    name: "Elements Backpack Pro",
     img: "../../images/produk/alpakabag1.png",
     page: "../../html/product/alpakabag.html",
   },
 
   {
-    name: "Orbit Key Bag",
+    name: "Nest",
     img: "../../images/produk/orbitkeybag1.png",
     page: "../../html/product/orbitkeybag.html",
   },
 
   {
-    name: "Sony WF-1000XM4",
+    name: "Max Backpack",
     img: "../../images/produk/sonyblack1.png",
     page: "../../html/product/sony.html",
   },
 
   {
-    name: "Able Bag",
+    name: "Day Sling 3",
     img: "../../images/produk/ablebag1.png",
     page: "../../html/product/ablebag.html",
   },
