@@ -18,7 +18,47 @@ const products = {
         name: "Soundcore Space One",
         image: "../../images/produk/../../images/produk/spaceone1.png",
         specs: "Adaptive ANC and 40mm drivers with custom-tuned drivers for rich audio. Up to 55 hours of playback with ANC off (40 hours with ANC on) and fast charging. With Bluetooth multipoint connectivity and an IPX4 water resistance rating"
-    }
+    },
+    compro5: {
+        name: "CMF Watch Pro 2",
+        image: "../../images/produk/nothingwatchblue1.png",
+        specs: "1.96-inch AMOLED display with 410x502 resolution, 50Hz refresh rate, and IP68 water resistance. It includes built-in GPS, SpO2 sensor, heart rate monitor, and offers up to 13 days of battery life."
+    },
+    compro6: {
+        name: "Samsung Galaxy Watch 7",
+        image: "../../images/produk/galaxywatch1.png",
+        specs: "1.5-inch Super AMOLED display, Exynos W930 chipset, 2GB RAM, 16GB storage, and runs on WearOS. It supports ECG, blood pressure monitoring, and has up to 50 hours of battery life with 5ATM + IP68 water resistance."
+    },
+    compro7: {
+        name: "Apple Watch Series 9",
+        image: "../../images/produk/applewatch1.png",
+        specs: "S9 SiP chip, it has a 1.9-inch Retina LTPO OLED display with 1000 nits brightness. It includes advanced sensors like blood oxygen, ECG, and a new double-tap gesture, offering up to 18 hours of battery life."
+    },
+    compro8: {
+        name: "Huawei Watch Ultimate",
+        image: "../../images/produk/huaweiwatchblue1.png",
+        specs: "1.5-inch LTPO AMOLED display with 466x466 resolution, water resistance up to 100m, and dual-band GPS. It offers robust health tracking with ECG and SpO2 sensors, plus up to 14 days of battery life."
+    },
+    compro9: {
+        name: "Elements Backpack Pro",
+        image: "../../images/produk/alpaka.png",
+        specs: " Made from weatherproof fabric with YKK AquaGuard zippers, it has a 30L capacity, 16 inch laptop compartment, padded back, and ergonomic straps."
+    },
+    compro10: {
+        name: "Able Carry Max Backpack",
+        image: "../../images/produk/ablebag1.png",
+        specs: "Constructed from Cordura nylon with YKK zippers, this 30L backpack features a 17 inch laptop sleeve, water resistance, airflow back panel, and organized internal compartments."
+    },
+    compro11: {
+        name: "AER Day Sling 3",
+        image: "../../images/produk/aerbag1.png",
+        specs: "uilt from 1680D Cordura ballistic nylon with YKK zippers, this 3L sling bag has an 11 inch tablet compartment, internal organization pockets, and an adjustable strap."
+    },
+    compro12: {
+        name: "Orbit Key Nest",
+        image: "../../images/produk/orbitkeybag1.png",
+        specs: "A polycarbonate portable organizer with customizable compartments, elastic bands, and a 10W wireless charging pad."
+    },
 };
 
 function updateProduct(column) {
