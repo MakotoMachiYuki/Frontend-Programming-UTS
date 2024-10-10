@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <link rel="stylesheet" href="../../css/category.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">CATEGORY PAGE</a></li>
+            </ul>
+        </nav>
+
+        <div class="comparator">
+            <div class="compro">
+                <select id="compro1" onchange="updateProduct(1)">
+                    <option value="">Select a product</option>
+                    <option value="compro1">Airpods Pro (2nd Generation)</option>
+                    <option value="compro2">Sony WF-1000xM4</option>
+                    <option value="compro3">Nothing Ear 2</option>
+                    <option value="compro4">Soundcore Space One</option>
+                </select>
+                <div id="details1" class="compro-details">
+                    <img id="image1" class="com-img" alt="Product 1">
+                    <h3 id="name1"></h3>
+                    <div id="specs1" class="specs"></div>
+                </div>
+            </div>
+            <div class="compro">
+                <select id="compro2" onchange="updateProduct(2)">
+                    <option value="">Select a product</option>
+                    <option value="compro1">Airpods Pro (2nd Generation)</option>
+                    <option value="compro2">Sony WF-1000xM4</option>
+                    <option value="compro3">Nothing Ear 2</option>
+                    <option value="compro4">Soundcore Space One</option>
+                </select>
+                <div id="details2" class="compro-details">
+                    <img id="image2" class="com-img" alt="Product 2">
+                    <h3 id="name2"></h3>
+                    <div id="specs2" class="specs"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <h1>Watch</h1>
+        </div>
+
+        <div class="sort-container">
+            <select id="sortSelect" onchange="sortProducts()">
+                <option value="">Sort by</option>
+                <option value="nameAsc">Name A-Z</option>
+                <option value="nameDesc">Name Z-A</option>
+                <option value="priceLow">Price: Low to High</option>
+                <option value="priceHigh">Price: High to Low</option>
+            </select>
+        </div>
+
+        <div id="productContainer" class="products">
+            <a href="../product/nothingwatch.html">
+                <div class="product">
+                    <img src="../../images/produk/nothingwatchblue1.png" alt="CMF Watch Pro 2">
+                    <h3>CMF Watch Pro 2</h3>
+                    <p>IDR 1.299.000</p>
+                </div>
+            </a>
+            <a href="../product/galaxywatch.html">
+                <div class="product">
+                    <img src="../../images/produk/galaxywatch1.png" alt="Samsung Galaxy Watch 7">
+                    <h3>Samsung Galaxy Watch 7</h3>
+                    <p>IDR 3.544.000 - IDR 3.999.000</p>
+                </div>
+            </a>
+            <a href="../product/applewatch.html">
+                <div class="product">
+                    <img src="../../images/produk/applewatch1.png" alt="Apple Watch Series 9">
+                    <h3>Apple Watch Series 9</h3>
+                    <p>IDR 5.295.000 - IDR 6.149.000</p>
+                </div>
+            </a>
+            <a href="../product/huaweiwatch.html">
+                <div class="product">
+                    <img src="../../images/produk/huaweiwatchblue1.png" alt="Huawei Watch Ultimate">
+                    <h3>Huawei Watch Ultimate</h3>
+                    <p>IDR 11.799.000 - IDR 12.999.000</p>
+                </div>  
+            </a> 
+        </div>
+
+    </div>
+</body>
+    <script src="../../js/category.js"></script>
+</html>
