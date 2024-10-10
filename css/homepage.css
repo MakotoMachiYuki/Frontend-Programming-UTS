@@ -186,6 +186,30 @@ a {
 
 @media (max-width: 1000px) {
   .slides img {
+    height: 30vh;
     object-fit: fill;
+  }
+  #slideDots {
+    top: 27vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .slides img {
+    height: 20vh;
+  }
+
+  #slideDots {
+    top: 17vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .slides img {
+    height: 20vh;
+  }
+
+  #slideDots {
+    top: 17vh;
   }
 }
